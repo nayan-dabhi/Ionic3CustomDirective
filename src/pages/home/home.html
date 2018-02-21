@@ -9,12 +9,16 @@
   <p>
     This starter project comes with simple tabs-based layout for apps that are going to primarily use a Tabbed UI.
   </p>
+
   <p>
     Take a look at the <code>src/pages/</code> directory to add or change tabs, update any existing page or create new pages.
   </p>
 
+  <button ion-button block (click)="onClickPage()">Settings Page</button>
+
   <ion-input type="text" mask="99999 99999" placeholder="Phone" [(ngModel)]="user.phone" required></ion-input>
 
-  <span [appShadow]="'hotpink'" [appShadowX]="'12px'" [appShadowY]="'6px'" [appShadowBlur]="'30px'">Shadow with directive usage.</span>
+  <div padding tappable modalSelect ngDefaultControl id="txtEmployee" [data]="mEmployeeDD" [dataIndex]="employee_id" [showClear]="true"></div>
+  <!-- <span [appShadow]="'blue'" [appShadowX]="'12px'" [appShadowY]="'6px'" [appShadowBlur]="'30px'">Shadow with directive usage.</span> -->
 
 </ion-content>

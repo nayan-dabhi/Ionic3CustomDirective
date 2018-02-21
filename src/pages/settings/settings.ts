@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
 import { NavController, Events } from 'ionic-angular';
 
-import { SettingsPage } from '../settings/settings';
-
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-settings',
+  templateUrl: 'settings.html'
 })
 
-export class HomePage {
+export class SettingsPage {
   public user: any = {
     phone: "1"
   };
@@ -46,9 +44,5 @@ export class HomePage {
     if (data.element.id == "txtEmployee") {
       this.employee_id = data.data.key;
     }
-  }
-
-  onClickPage() {
-    this.navCtrl.push(SettingsPage);
   }
 }
